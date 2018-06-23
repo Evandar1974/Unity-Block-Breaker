@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 08e1e91e68adf404681b6bfeb648adfe
+timeCreated: 1505575288
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blockbuster
+  fontNames:
+  - Blockbuster
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
