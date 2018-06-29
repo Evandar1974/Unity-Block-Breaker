@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Paddle : MonoBehaviour {
+public class Paddle : MonoBehaviour
+{
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	

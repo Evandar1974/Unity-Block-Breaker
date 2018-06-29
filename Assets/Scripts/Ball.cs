@@ -12,7 +12,8 @@ public class Ball : MonoBehaviour {
         rigi = GetComponent<Rigidbody2D>();
     }
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         paddleToBallVector = this.transform.position - paddle.transform.position;
 	}
 
