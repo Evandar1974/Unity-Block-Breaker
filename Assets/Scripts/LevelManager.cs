@@ -12,6 +12,12 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
+    public void LoadNextLevel()
+    {
+        int currentSceenIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceenIndex + 1);
+    }
+
     public void QuitRequest()
     {
         Debug.Log("Quit Button Pressed");

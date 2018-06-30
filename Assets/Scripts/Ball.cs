@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
-    public Paddle paddle;
+    private Paddle paddle;
     private Rigidbody2D rigi;
     private Vector3 paddleToBallVector;
     private bool hasStarted = false;
@@ -14,6 +14,7 @@ public class Ball : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        paddle = GameObject.FindObjectOfType<Paddle>();
         paddleToBallVector = this.transform.position - paddle.transform.position;
 	}
 
