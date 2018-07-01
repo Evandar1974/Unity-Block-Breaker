@@ -66,6 +66,7 @@ public class Brick : MonoBehaviour
         ParticleSystem.Instantiate(Smoke, transform.position, Quaternion.identity);
         var main = Smoke.main;
         main.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+        ParticleSystem.Destroy(Smoke, main.duration);
     }
 
     void LoadSprites()
