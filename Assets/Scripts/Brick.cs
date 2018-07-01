@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
+    public AudioClip crack;
+    public AudioClip broke;
     public static int breakableCount = 0;
     public Sprite[] hitSprites;
 
@@ -32,6 +34,7 @@ public class Brick : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        AudioSource.PlayClipAtPoint(crack, transform.position);
         if(isBreakable)
         {
             handleHits();
@@ -44,6 +47,7 @@ public class Brick : MonoBehaviour
         int maxHits = hitSprites.Length + 1;
         if (timeshit >= maxHits)
         {
+            AudioSource.PlayClipAtPoint(broke, transform.position);
             breakableCount--;
             levelmanager.BrickDestroyed();
             Destroy(gameObject);
